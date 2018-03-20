@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Scarne\'s Dice Game</string>
+    <string name="roll">Let it Roll</string>
+    <string name="reset">Reset</string>
+    <string name="Hold">Halt!</string>
+    <string name="diceTitle">Play The Dice</string>
+</resources>

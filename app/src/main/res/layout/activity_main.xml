@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlos.scarnesdicegame.MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/diceTitle"
+        android:textSize="20pt"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+
+        />
+    <ImageView
+        android:id="@+id/Dice"
+        android:src="@drawable/dice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dice"
+        android:onClick="diceRoll"
+        android:hint="@string/roll"
+        android:textColorHint="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dice"
+        android:layout_toEndOf="@id/Roll"
+        android:onClick="resetDice"
+        android:hint="@string/reset"
+        android:textColorHint="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/Hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Dice"
+        android:layout_toEndOf="@id/Reset"
+        android:onClick="holdRoll"
+        android:hint="@string/Hold"
+        android:textColorHint="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        />
+
+
+</RelativeLayout>
